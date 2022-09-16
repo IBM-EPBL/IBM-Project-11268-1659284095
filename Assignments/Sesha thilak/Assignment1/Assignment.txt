@@ -1,0 +1,11 @@
+1. List creation and modifications.
+
+2. Create a calculator program in python.
+
+3. String concatination and slicing.
+
+4. Why python is a popular language? 
+
+5. What are the other frameworks that can be used with python?
+        
+6. WSGI full-form?
