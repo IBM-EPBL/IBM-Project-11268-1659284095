@@ -15,3 +15,4 @@ IBM Cloud,HTML,Javascript,IBM Cloud Object Storage,Python-Flask,Kubernetes,Docke
 
 # Technical Architecture
 ![image](https://user-images.githubusercontent.com/66899970/190616214-892b4bee-c85f-4902-95b4-87cea19f3bcf.png)
+
