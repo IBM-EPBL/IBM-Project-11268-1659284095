@@ -2,7 +2,7 @@
 
 2. Create a calculator program in python.
 
-3. String concatination and slicing.
+3. String concatenation and slicing.
 
 4. Why python is a popular language? 
 
