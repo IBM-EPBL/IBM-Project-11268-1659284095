@@ -1,0 +1,15 @@
+1. List creation and modifications. Answer -> test1.py
+
+2. Create a calculator program in python. Answer -> calculator.py
+
+3. String concatination and slicing. Answer -> String.py
+
+4. Why python is a popular language? 
+        python is a popular language because it is easy to learn and 
+        it is a high level language. 
+
+5. What are the other frameworks that can be used with python?
+        Django, Bottle, Pyramid, web2py, TurboGears, Pylons.
+
+6. WSGI full-form?
+        Webserver Gateway Interface.
