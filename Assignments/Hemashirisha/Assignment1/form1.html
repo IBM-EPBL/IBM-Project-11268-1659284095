@@ -4,7 +4,7 @@
     <title>Register for UCloud</title>
 </head>
 <body>
-    <form method="post" action="success_page.html">
+    <form method="post">
         <table>
             <tr>	
                 <th colspan="2">Signup</th>
@@ -53,11 +53,27 @@
                 </td>
             </tr>
             <tr rowspan="2">
-                <td colspan="2"><input id="button" type="submit" value="Submit" name="submit">
-                <input id="button" type="reset" value="Reset" name="reset">
+                <td colspan="2">
+                    <button type="button" onclick="testJS()">Submit</button>
+                    <input id="button" type="reset" value="Reset" name="reset">
                 </td>
             </tr>
         </table>
     </form>
 </body>
+<script>
+    function testJS() {
+    console.log("Hello");
+    var name = document.getElementById('name').value;
+    var mobile = document.getElementById('mobile').value;
+    var email = document.getElementById('email').value;
+    var gender = document.getElementById('gender').value;
+    var address = document.getElementById('address').value;
+    var country = document.getElementById('country').value;
+    url = './success_page.html?name=' + encodeURIComponent(name)+'?mobile=' + encodeURIComponent(mobile)+'?email=' + encodeURIComponent(email)+'?gender=' + encodeURIComponent(gender)+'?address=' + encodeURIComponent(address)+'?country=' + encodeURIComponent(country);
+
+    document.location.href = url;
+}
+</script>
 </html>
+
