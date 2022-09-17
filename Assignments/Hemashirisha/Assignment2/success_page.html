@@ -2,7 +2,60 @@
 <html>
 <head>
     <title>Successful registration</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
-    <h2>Thank you for registering! Enjoy UCloud</h2>
+    <h2>Thank you for registering! Enjoy UCloud.</h2>
+    <h3>Your details</h3>
+    <table >
+        <tr>	
+            <th colspan="4">Signup</th>
+        </tr>
+        <tr>
+            <td><label for="name">Name</label></td>
+            <td id="name"></td>
+        </tr>
+        <tr>
+            <td><label for="mobile">Mobile</label></td>
+            <td id="mobile"></td>
+        </tr>
+        <tr>
+            <td><label for="email">Email</label></td>
+            <td id="email"></td>
+        </tr>
+        
+        <tr>
+            <td><label for="gender">Gender</td>
+            <td id="gender">
+            
+            </td>
+        </tr>
+        <tr>
+            <td><label for="address">Address</label></td>
+            <td id="address">		  
+            </td>
+        </tr>
+        <tr>
+            <td><label for="country">Country</label></td>
+            <td id="country">		
+            
+            </td>
+        </tr>
+       
+    </table>
 </body>
+<script>
+    window.onload = function () {
+    var url = document.location.href;
+        params = url.split('?');
+        console.log(params);
+    for (var i = 1, l = params.length; i < l; i++) {
+         tmp = params[i].split('=');
+         document.getElementById(tmp[0]).innerHTML = tmp[1];
+    }
+}
+</script>
