@@ -1,0 +1,55 @@
+body {
+  background-color: #a9e8cc;
+}
+
+.header {
+  padding: 2px 120px;
+  width: 150px;
+  height: 70px;
+  background-color: #3fa778;
+}
+
+.border {
+  padding: 10px 50px;
+  width: 400px;
+  height: 500px;
+  border: 1px solid #3fa778;
+  border-radius: 30px;
+  background-color: #3fa778;
+}
+
+.btn {
+  padding: 10px 40px;
+  background-color: #3fa778;
+  color: #ffffff;
+  font-style: oblique;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.textbox {
+  padding: 10px 40px;
+  background-color: #3fa778;
+  text-color: #ffffff;
+  border-radius: 10px;
+}
+
+::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.word {
+  color: #ffffff;
+}
+
+.bottom {
+  color: white;
+}
+
+.welcome {
+  vertical-align: middle;
+  padding-top: 100px;
+  size: 500px;
+  font-weight: bold;
+}
