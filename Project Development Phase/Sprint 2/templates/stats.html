@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Plasma Donar App</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/static/red.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">Plasma Donar App</a>
+    <div class="w3-right w3-hide-small">
+      <a href="#form" class="w3-bar-item w3-button"><i class="fa fa-user"></i> REQUEST BLOOD </a>
+      <a href="/" class="w3-bar-item w3-button"> LOGOUT </a>
+    </div>
+  </div>
+</div>
+<br/>
+<br/>
+<br/>
+<br/><br/>
+<br/>
+<H1 style="text-align: center;">Total Donars - 17</H1>
+<br/>
+<br/><br/>
+
+<br/>
+<div class="w3-panel">
+  <div class="w3-row-padding" style="margin:0 -16px">
+   
+    <div >
+      <h5>Donars Details</h5>
+      <table class="w3-table w3-striped w3-white">
+        <tr>
+          <th>Blood Type </th>
+          <th>Compatible with</th>
+          <th>Available donars</th>
+        </tr>
+        <tr>
+          <th>A+</th>
+          <td>A+, AB+</td>
+          <td><i>3</i></td>
+        </tr>
+        <tr>
+          <th>O+</th>
+          <td>O+, A+, B+, AB+</td>
+          <td><i>3</i></td>
+        </tr>
+        <tr>
+          <th>B+</th>
+          <td>B+, AB+</td>
+          <td><i>4</i></td>
+        </tr>
+        <tr>
+          <th>AB+</th>
+          <td>AB+</td>
+          <td><i>1</i></td>
+        </tr>
+        <tr>
+          <th>A-</th>
+          <td>A+, A-, AB+, AB-</td>
+          <td><i>3</i></td>
+        </tr>
+        <tr>
+          <th>O-</th>
+          <td>Anyone</td>
+          <td><i>1</i></td>
+        </tr>
+        <tr>
+          <th>B-</th>
+          <td>B-, AB+, B+, AB-</td>
+          <td><i>3</i></td>
+        </tr>
+        <tr>
+          <th>AB-</th>
+          <td>AB+, AB-</td>
+          <td><i>3</i></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+  <div class="w3-container w3-light-grey" style="padding:128px 16px" id="form">
+    <h3 class="w3-center">REQUEST BLOOD </h3>
+    <p class="w3-center w3-large">Note : Please make sure if the blood is compatible</p>
+   
+    
+    <form action="{{ url_for('requested')}}"method="post">
+      <select name="bloodgrp" class="w3-input w3-border" >
+        <option value="select" selected>Choose your blood group</option>
+        <option value="O Positive">O Positive</option>
+        <option value="A Positive">A Positive</option>
+        <option value="B Positive">B Positive</option>
+        <option value="AB Positive">AB Positive</option>
+        <option value="O Negative">O Negative</option>
+        <option value="A Negative">A Negative</option>
+        <option value="B Negative">B Negative</option>
+        <option value="AB Negative">AB Negative</option>
+</select>
+       <p><input type="textarea"rows="4" placeholder="Enter the address" required="required" class="w3-input w3-border" name="address"></textarea></p>
+     <p><input class="w3-input w3-border" type="phone" name="phone" placeholder="Enter Contact number" required="required" /></p>
+
+       <p><button type="submit" class="w3-button w3-black">REQUEST</button></p>
+       <div style="color:red">
+        <h3>{{ pred }}</h3></div>
+        </div>
+     </form>
+  
+      <img src="/static/req.jpeg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+    </div>
+  </div>
+  <footer class="w3-center w3-black w3-padding-64">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  </footer>
+</body>
+
+</html>
